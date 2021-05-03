@@ -1,0 +1,812 @@
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+body{
+  background-image: linear-gradient(to bottom right, #a6a6a6, #00cc99);
+}
+.hide {
+  display: none;
+  margin-left: 94vw;
+}
+a:hover + .hide {
+  display: block;
+  color: white;
+}
+
+.ml5 {
+  font-weight: 300;
+  font-size: 2.5vw;
+  color: white;
+  margin-left:30vw;
+  width:40vw;
+  text-align:center;
+  margin-bottom:0px;
+  margin-top:0px;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  transform-origin: 0.5 0;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+}
+
+h1.maths{
+  font-family:'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 3vw;
+  color: white;
+  margin-left:14vw;
+  margin-top:2vw;
+  position: absolute;
+
+}
+
+h1.colour{
+  font-family:'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 3vw;
+  color: white;
+  text-align:center;
+  margin-top:2vw;
+  position: absolute;
+  margin-left:6vw;
+
+}
+
+h1.title1{
+  font-family:'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 50px;
+  top: -20px;
+  left: 250px;
+  width: 100%;
+  color: blue;
+}
+
+.colourintro{
+  text-align: center;
+  z-index: 1;
+  font-size:2vw;
+  margin-top:15vw;
+
+
+}
+.mathsintro{
+  text-align: center;
+  z-index: 1;
+  font-size:2vw;
+  margin-top:15vw;
+  margin-bottom: 0vw;
+  position: absolute;
+  max-width: 45vw;
+
+}
+.mathbox {
+    border-radius: 25px;
+    box-shadow: 8px 2px 5px;
+    background: white;
+    width: 45vw;
+    margin-left:2vw;
+    height: 38vw;
+    margin-top:7vw;
+    position: absolute;
+}
+
+.colourbox {
+    border-radius: 25px;
+    background: white;
+    width: 45vw;
+    margin-left:2vw;
+    height: 38vw;
+    margin-top:7vw;
+    box-shadow: 8px 2px 5px;
+    position: absolute;
+}
+
+  p.alice {
+    float:left;
+    font-family:'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    color: black;
+    font-size: 2vw;
+    margin-top:2vw;
+    margin-left:5vw;
+    position: absolute;
+  }
+
+  p.coloureve {
+    float:left;
+    font-family:'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    color: black;
+    font-size: 2vw;
+    margin-top:2vw;
+    margin-left:20vw;
+    position: absolute;
+  }
+
+p.colourbob {
+  float:right;
+  font-family:'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  color: black;
+  font-size: 2vw;
+  margin-top:2vw;
+  margin-left:35vw;
+  position: absolute;
+  }
+
+.eve{
+  height: 5vw;
+  width: 5vw;
+  margin-top:5vw;
+  margin-left:19vw;
+  position: absolute;
+}
+
+p.colourtext1 {
+  color: black;
+  font-size:1.5vw;
+  text-align: center;
+  margin-top:32vw;
+  position: absolute;
+  width:45vw;
+}
+
+p.colourtext2 {
+  color: black;
+  font-size:1.5vw;
+  text-align: center;
+  margin-top:32vw;
+  position: absolute;
+  width:45vw;
+}
+
+p.colourtext3 {
+  color: black;
+  font-size:1.5vw;
+  text-align: center;
+  margin-top:32vw;
+  position: absolute;
+  width:45vw;
+}
+
+p.colourtext4 {
+  color: black;
+  font-size:1.5vw;
+  text-align: center;
+  margin-top:32vw;
+  position: absolute;
+  widt
+  h:45vw;
+}
+p.three2 {
+  color: black;
+  font-size:1.5vw;
+  text-align: center;
+  margin-top:32vw;
+  position: absolute;
+  width:45vw;
+}
+
+p.colourtext5 {
+  color: black;
+  font-size:1.5vw;
+  text-align: center;
+  margin-top:32vw;
+  position: absolute;
+  width:45vw;
+}
+
+p.colourtext6 {
+  color: black;
+  font-size:1.5vw;
+  text-align: center;
+  margin-top:32vw;
+  position: absolute;
+  width:45vw;
+}
+
+.container{
+  margin-top:1vw;
+  margin-left:10vw;
+}
+
+/*COLOUR BUTTONS*/
+
+
+.play-colour {
+  background: transparent; outline: none;
+  border: 2px solid white;
+  width: 6vw;
+  height: 2vw;
+  margin-left: 4vw;
+  margin-top:46vw;
+  position: absolute;
+  }
+
+
+.play-pausecolour {
+    background: transparent; outline: none;
+    border: 2px solid white;
+    width: 6vw;
+    height: 2vw;
+    margin-left: 18vw;
+    margin-top:46vw;
+    position: absolute;
+    }
+
+    button:hover div.but3{opacity: 0; transform: translate(100%,0)}
+    button div.but2{
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: .8em;
+      transition: all .3s ease-in-out;
+    }
+    button:hover div.but4{opacity: 0; transform: translate(100%,0)}
+    button div.but4{
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: .8em;
+      transition: all .3s ease-in-out;
+    }
+
+button.play-colour:hover:before{opacity: 1; transform: translate(0,0);}   /*this is for play icon*/
+    button.play-colour:before{
+      content: attr(data-hover);
+      width: 0%;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: .8em;
+      opacity: 0;
+      transform: translate(-100%,0);
+      transition: all .3s ease-in-out;
+      position: absolute;
+      left: 45%;
+      bottom: 10%;
+    }
+
+    button.play-pausecolour:hover:before{opacity: 1; transform: translate(0,0);}    /*this is for pause icon*/
+     button.play-pausecolour:before{
+      content: attr(data-hover);
+      width: 0%;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: .8em;
+      opacity: 0;
+      transform: translate(-100%,0);
+      transition: all .3s ease-in-out;
+      position: absolute;
+      left: 45%;
+      bottom: 10%;
+    }
+    button div (button text before hover)
+    button:hover div.but3{opacity: 0; transform: translate(100%,0)}   /*play text*/
+     button div.but3{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+        font-size: .8em;
+        color: white;
+        transition: all .3s ease-in-out;
+        position: absolute;
+        left: 25%;
+        bottom: 28%;
+      }
+
+      button:hover div.but4{opacity: 0; transform: translate(100%,0)}  /*play text*/
+      button div.but4{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+        font-size: .8em;
+        color: white;
+        transition: all .3s ease-in-out;
+        position: absolute;
+        left: 20%;
+        bottom: 28%;
+      }
+
+
+/*END OF CODE FOR COLOUR BUTTONS*/
+
+
+  .trying_new {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: yellow;
+    margin-top:5vw;
+    margin-left:5vw;
+    border: 3px solid #111111;
+    position: absolute;
+
+    }
+
+  .second {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: yellow;
+    margin-top:5.5vw;
+    margin-left: 34vw;
+    position: absolute;
+    border: 3px solid #111111;
+  }
+
+  .alicepriv {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: Red;
+    margin-top:12.5vw;
+    margin-left:5vw;
+    position: absolute;
+    border: 3px solid #111111;
+  }
+
+  .bobpriv {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: blue;
+    margin-top:12.5vw;
+    margin-left: 34vw;
+    position: absolute;
+    border: 3px solid #111111;
+  }
+
+  .alicepk2 {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: red;
+    margin-top:26.5vw;
+    margin-left:5vw;
+    position: absolute;
+    border: 3px solid #111111;
+  }
+
+  .bobpk2 {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: blue;
+    margin-top:26.5vw;
+    margin-left: 34vw;
+    position: absolute;
+    border: 3px solid #111111;
+  }
+  p.matheve {
+    float:left;
+    font-family:'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    color: black;
+    font-size: 2vw;
+    margin-top:2vw;
+    margin-left:21vw;
+    position: absolute;
+  }
+
+.meve{
+  height: 5vw;
+  width: 5vw;
+  margin-top:5vw;
+  margin-left:20vw;
+  position: absolute;
+}
+  p.mathsalice {
+    float:left;
+    font-family:'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    color: black;
+    font-size: 2vw;
+    margin-top:2vw;
+    margin-left:5vw;
+    position: absolute;
+
+  }
+  p.mathsbob {
+    float:right;
+    font-family:'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    color: black;
+    font-size: 2vw;
+    margin-top:2vw;
+    margin-left:35vw;
+    position: absolute;
+
+  }
+
+  p.f {
+  color: black;
+  font-size:1.5vw;
+  text-align: center;
+  margin-top:32vw;
+  position: absolute;
+  width:45vw;
+  }
+
+  p.next {
+  color: black;
+  font-size:1.5vw;
+  position: absolute;
+  text-align: center;
+  margin-top:32vw;
+  width:45vw;
+
+  }
+
+  p.three {
+  color: black;
+  font-size:1.5vw;
+  position: absolute;
+  text-align: center;
+  margin-top:32vw;
+  width:45vw;
+
+  }
+
+  p.fourth {
+  color: black;
+  font-size:1.5vw;
+  position: absolute;
+  text-align: center;
+  margin-top:32vw;
+  width:45vw;
+  }
+
+  p.five {
+  color: black;
+  font-size:1.5vw;
+  position: absolute;
+  text-align: center;
+  margin-top:32vw;
+  width:45vw;
+  }
+
+  p.last {
+  color: black;
+  font-size:1.5vw;
+  position: absolute;
+  text-align: center;
+  margin-top:32vw;
+  width:45vw;
+  }
+
+  .timeline1 {
+
+  top: 10px;
+  left: 1000px;
+  opacity: 0;
+  }
+
+  .timeline2 {
+
+  top: 10px;
+  left: 1100px;
+  opacity: 0;
+  }
+
+  button:hover{cursor: pointer}
+
+
+
+/*MATHS BUTTONS*/
+ .play-maths {
+    background: transparent; outline: none;
+    border: 2px solid white;
+    color: white;
+    width: 6vw;
+    height: 2vw;
+    margin-left: 4vw;
+    margin-top:46vw;
+    position: absolute;
+
+  }
+
+  .play-pausemaths {
+    background: transparent; outline: none;
+    border: 2px solid white;
+    width: 6vw;
+    height: 2vw;
+    margin-left: 18vw;
+    margin-top:46vw;
+    position: absolute;
+    }
+
+    *:before, *:after{
+    box-sizing: border-box;
+    padding: 0px 0px;
+    font: 300 1em/1.5 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 4vw;
+  }
+
+
+button:before (attr data-hover)
+
+button:hover:before{opacity: 1; transform: translate(0,0);}
+  button:before{
+    content: attr(data-hover);
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: .8em;
+    opacity: 0;
+    transform: translate(-100%,0);
+    transition: all .3s ease-in-out;
+  }
+
+button:hover div.but1{opacity: 0; transform: translate(100%,0)}
+    button div.but1{
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: .8em;
+      transition: all .3s ease-in-out;
+    }
+
+button:hover div.but2{opacity: 0; transform: translate(100%,0)}
+    button div.but2{
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: .8em;
+      transition: all .3s ease-in-out;
+    }
+
+button:hover{cursor: pointer}   /*this is for box*/
+button{
+    background: transparent; outline: none;
+    position: relative;
+    border: 2px solid white;
+    padding: 10px 40px;
+    overflow: hidden;
+  }
+
+
+button.play-maths:hover:before{opacity: 1; transform: translate(0,0);}  /*this is for play icon*/
+button.play-maths:before{
+  content: attr(data-hover);
+  width: 0%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: .8em;
+  opacity: 0;
+  transform: translate(-100%,0);
+  transition: all .3s ease-in-out;
+  position: absolute;
+  left: 45%;
+  bottom: 18%;
+}
+
+button.play-pausemaths:hover:before{opacity: 1; transform: translate(0,0);}    /*this is for pause icon*/
+button.play-pausemaths:before{
+  content: attr(data-hover);
+  width: 0%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: .8em;
+  opacity: 0;
+  transform: translate(-100%,0);
+  transition: all .3s ease-in-out;
+  position: absolute;
+  left: 45%;
+  bottom: 15%;
+}
+
+button div (button text before hover)
+button:hover div.but1{opacity: 0; transform: translate(100%,0)}  /*play text*/
+button div.but1{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: .8em;
+    color: white;
+    transition: all .3s ease-in-out;
+    position:absolute;
+    left: 25%;
+    bottom: 30%;
+  }
+
+ button:hover div.but2{opacity: 0; transform: translate(100%,0)}  /*pause text*/
+ button div.but2{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: .8em;
+    color: white;
+    transition: all .3s ease-in-out;
+    position:absolute;
+    left: 20%;
+    bottom: 30%;
+  }
+
+
+
+
+  p.pg {
+    margin-top:5vw;
+    margin-left:4vw;
+    position: absolute;
+    font-size: 1.5vw;
+
+  }
+  p.pg2 {
+
+   margin-top:5vw;
+   margin-left:32vw;
+   position: absolute;
+   font-size: 1.5vw;
+  }
+
+  .pathalice {
+    stroke-dasharray: 1000;
+    padding-left: 50px;
+    stroke-dashoffset: 1000;
+    animation: dash 15s linear alternate auto off;
+  }
+
+  path.pathbob {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 15s linear alternate auto off;
+  }
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 1000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .aliceprivKey {
+    font-size: 1.5vw;
+    margin-top:8vw;
+    margin-left:4vw;
+    position: absolute;
+  }
+
+  .bobprivKey {
+    font-size: 1.5vw;
+    margin-top:8vw;
+    margin-left:32vw;
+    position: absolute;
+  }
+
+  .alicepubKey {
+    margin-top:11vw;
+    margin-left:4vw;
+    position: absolute;
+    font-size: 1.5vw;
+  }
+
+  .bobpubKey {
+    font-size: 1.5vw;
+    margin-top:11vw;
+    margin-left:32vw;
+    position: absolute;
+  }
+
+  .alicepubKeysol {
+    font-size: 1.5vw;
+    margin-top:13vw;
+    margin-left:4vw;
+    position: absolute;
+  }
+
+  .bobpubKeysol {
+
+    font-size: 1.5vw;
+    margin-top:13vw;
+    margin-left:32vw;
+    position: absolute;
+  }
+
+  p.EveAlice {
+    font-size: 1.3vw;
+    margin-top:20vw;
+    margin-left:15vw;
+    position: absolute;
+  }
+
+  p.EveBob {
+    font-size: 1.5vw;
+    margin-top:21vw;
+    margin-left:7vw;
+    position: absolute;
+    max-width: 45vw;
+  }
+
+  .aliceshared {
+    margin-top:24vw;
+    margin-left:4vw;
+    position: absolute;
+    font-size: 1.5vw;
+  }
+
+  .bobshared {
+    margin-top:24vw;
+    margin-left:32vw;
+    position: absolute;
+    font-size: 1.5vw;
+  }
+  .alicefinal {
+    margin-top:26vw;
+    margin-left:4vw;
+    position: absolute;
+    font-size: 1.5vw;
+  }
+
+  .bobfinal {
+    margin-top:26vw;
+    margin-left:32vw;
+    position: absolute;
+    font-size: 1.5vw;
+  }
+
+  .orangekey{
+    position: absolute;
+    height: 9vw;
+    width: 9vw;
+    padding-top: 0vw;
+    margin-top:11vw;
+    margin-left: 5vw;
+  }
+
+  .greenkey{
+    position: absolute;
+    height: 9vw;
+    width: 9vw;
+    padding-top: 0vw;
+    margin-top:11vw;
+    margin-left: 34vw;
+  }
+
+  .brownkey{
+    position: absolute;
+    height: 9vw;
+    width: 9vw;
+    padding-top: 0vw;
+    margin-top:24vw;
+    margin-left: 5vw;
+  }
+
+  .brownkey2{
+    position: absolute;
+    height: 9vw;
+    width: 9vw;
+    padding-top: 0vw;
+    margin-top:24vw;
+    margin-left: 34vw;
+  }
+
+  .purplekey{
+    position: absolute;
+    height: 9vw;
+    width: 9vw;
+    padding-top: 0vw;
+    margin-top:13vw;
+    margin-left: 19vw;
+  }

@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="stylemiddle.css">
+    <title>Diffie Helman animation</title>
+  </head>
+ <body>
+   <div style="display: flex; flex-direction: column; row; height:1vh">
+   <a href="current.html"><img src="home.png" alt="home" style="width: 4vw ;height:4vw; margin-left: 94vw;"></a>
+   <div class="hide">Click to return to DHKE</div>
+   </div>
+<div style="display: flex; flex-direction: column;">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<h1 class="ml5">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters letters-left">DHKE: </span>
+    <span class="letters letters-right">Man in the Middle Attack</span>
+    <span class="line line2"></span>
+  </span>
+</h1>
+
+<div style="display: flex; flex-direction: row; height:90vh">
+
+
+<!-- Maths container -->
+<div style="display: flex; flex-direction:column; width:60vw">
+<!-- Math header -->
+  <h1 class= maths > Maths Example </h1>
+<!-- Math main content container -->
+  <div class="mathbox">
+
+
+    <p id='test' class = mathsalice> Alice </p>
+    <p class = mathsbob> Bob </p>
+    <p class="mathsintro"> Click play to see diffie Helman key exchange with a man in the middle attack using a mathmatical example  </p>
+    <p class = "matheve"> Eve </p>
+    <img class= "meve" src="emoji.png" alt="eve">
+
+    <p class="pg">G=15 and P=1011</p>
+    <p class="pg2">G=15 and P=1011</p>
+    <p class="aliceprivKey">a = 5</p>
+    <p class="bobprivKey">b = 9</p>
+    <p class="alicepubKey">A=15^5 mod 1011</p>
+    <p class="bobpubKey">B=15^9 mod 1011</p>
+    <p class="alicepubKeysol">A=114</p>
+    <p class="bobpubKeysol">B=462</p>
+    <p class="EveAlice">Ea= 114^7 mod 1011 = 402</p>
+    <p class="EveBob">B = 462</p>
+    <p class="aliceshared">K= 402^5 mod 1011</p>
+    <p class="bobshared">K=462^9 mod 1011</p>
+    <p class="alicefinal">K = 636</p>
+    <p class="bobfinal">K = 483</p>
+
+    <p class="f"> Alice and Bob picks a large prime P and a number G, which is a primitive root modulo p. </p>
+    <p class="next"> Alice and bob randomly generates a private key a/b</p>
+    <p class="three"> Alice and bob will then calculate their public key using P,G and their private key </p>
+    <p class="fourth"> Alice and bob send eachother their public key, but Eve is going to interpect this exchange and change Alice's value in the tunnel from 114 to 402 </p>
+    <p class="five"> Alice and Bob without knowing will calculate Eves new key with their private key to get the solution</p>
+    <p class="last"> Bob and Alice will end up with diffrent solutions. This is wrong, as the Diffie-Hellman method should give the same value. Eve Has sucuseesfully performed the attack</p>
+
+
+
+    <img class=orangekey src="keyorange.png" alt="alicepub">
+    <img class=greenkey src="keygreen.png" alt="bobpub">
+    <img class=brownkey src="brownkey.png" alt="shared key">
+    <img class=brownkey2 src="bobfin.png" alt="shared key2">
+    <img class=purplekey src="purplekey.png" alt="eve key">
+
+
+    <svg class ="ani" viewBox="0 0 500 500">
+      <path class= "pathbob" d="M59,120 h105 a20,20 0 0 1 20,20 v20 a20,20 0 0 1 -20,20 h-105 a20,20 0 0 1 -20,-20 v-20 a20,20 0 0 1 20,-20 z" fill="none" stroke="orange" stroke-width="3" width="300" height="140"/>
+      <path class= "pathbob" d="M370,120 h105 a20,20 0 0 1 20,20 v20 a20,20 0 0 1 -20,20 h-105 a20,20 0 0 1 -20,-20 v-20 a20,20 0 0 1 20,-20 z" fill="none" stroke="green" stroke-width="3" width="300" height="140"/>
+      <path class= "pathalice" d="M59,260 h105 a20,20 0 0 1 20,20 v20 a20,20 0 0 1 -20,20 h-105 a20,20 0 0 1 -20,-20 v-20 a20,20 0 0 1 20,-20 z" fill="none" stroke="red" stroke-width="3" width="300" height="140"/>
+      <path class= "pathalice" d="M370,260 h105 a20,20 0 0 1 20,20 v20 a20,20 0 0 1 -20,20 h-105 a20,20 0 0 1 -20,-20 v-20 a20,20 0 0 1 20,-20 z" fill="none" stroke="blue" stroke-width="3" width="300" height="140"/>
+    </svg>
+
+
+
+    <div class="rcorners2"></div>
+    <div class="rcorners3"></div>
+
+
+
+  </div>
+<!--  Math buttons -->
+  <section class="container">
+  <button class="play-maths" data-hover=">"> <div class="but1">Play</div></button>
+  <button class="play-pausemaths" data-hover="II"><div class="but2">Pause</div></button>
+  </section>
+
+
+</div>
+
+<!-- End of maths container code -->
+
+<!-- Colour container -->
+<div style="display: flex; flex-direction:column; width:60vw">
+<!-- colour header -->
+  <h1 class= colour> Colour Mixing Example </h1>
+<!-- Colour main content container -->
+  <div class="colourbox">
+
+
+    <p class="alice"> Alice </p>
+    <p class = colourbob> Bob </p>
+    <p class = "coloureve"> Eve </p>
+    <img class= "eve" src="emoji.png" alt="eve">
+
+    <div class="trying_new"> </div>
+    <div class="second"> </div>
+    <div class="alicepriv"> </div>
+    <div class="bobpriv"> </div>
+    <div class="alicepk2"> </div>
+    <div class="bobpk2"> </div>
+
+    <p class="colourtext1"> Agree on a colour (p,g) </p>
+    <p class="colourtext2"> Both users will pick their own private colour that is different from the other persons. (This is the users Private key)</p>
+    <p class="colourtext3"> The users will then mix their private colour with the agreed colour (This is the users Public key) </p>
+    <p class="three2"> Eve creates her own key </p>
+    <p class="colourtext4"> Alice and bob believe they share their public key with each other, whereas they each share their public key with eve. Eve replaces Alice's public key with her own.</p>
+    <p class="colourtext5"> Eve will then send her own message to Alice and Bob which they will both mix with their private key</p>
+    <p class="colourtext6"> Bob and Alice will end up with diffrent colours. This is wrong, as the Diffie-Hellman method should give the same value. Eve Has sucuseesfully performed the attack</p>
+
+    <p class="colourintro"> Click play to see diffie Helman key exchange with a man in the middle attack using a colour mixing example  </p>
+
+
+  </div>
+<!-- colour buttons -->
+  <section class="container">
+  <button class="play-colour" data-hover=">"><div class="but3">Play</div></button>
+  <button class="play-pausecolour" data-hover="II"><div class="but4">Pause</div></button>
+
+</section>
+
+</div>
+<!-- End of colour container code -->
+
+
+
+
+
+<div>
+<button class="timeline1" style="display: none">Example 1</button>
+<button class="timeline2" style="display: none">Example 2</button>
+</div>
+
+
+
+
+<!-- End of column container for maths and colour examples -->
+
+</div>
+
+<!-- end of background container -->
+</div>
+
+
+
+<script src="anime.js"></script>
+<script>
+
+
+var introTimeline = anime.timeline({ direction: "alternate", loop: 3, autoplay: true });
+introTimeline
+
+.add({
+    targets: '.ml5 .line',
+    opacity: [0.5,1],
+    scaleX: [0, 1],
+    easing: "easeInOutExpo",
+    duration: 700
+  }).add({
+    targets: '.ml5 .line',
+    duration: 600,
+    easing: "easeOutExpo",
+    translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+  }).add({
+    targets: '.ml5 .letters-left',
+    opacity: [0,1],
+    translateX: ["0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=300'
+  }).add({
+    targets: '.ml5 .letters-right',
+    opacity: [0,1],
+    translateX: ["-0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  })
+.add({
+   targets: ['.colourintro', '.mathsintro'],
+   opacity: [0,1],
+   easing: "easeInOutQuad",
+   duration: 2250
+ }).add({
+    targets: ['.colourintro', '.mathsintro'],
+    easing: "easeInOutQuad",
+    translateY: -10,
+    duration: 1250
+  }).add({
+     targets: ['.colourintro', '.mathsintro'],
+     easing: "easeInOutQuad",
+     translateY: 5,
+     duration: 1250
+   }).add({
+      targets: ['.colourintro', '.mathsintro'],
+      easing: "easeInOutQuad",
+      translateY: -10,
+      duration: 1250
+    }).add({
+       targets: ['.colourintro', '.mathsintro'],
+       easing: "easeInOutQuad",
+       translateY: 5,
+       duration: 1450
+})
+
+.add({
+   targets: ['.colourintro','.mathsintro'],
+   opacity: 0.5,
+   easing: "easeInOutQuad",
+   duration: 0
+})
+
+
+
+var basicTimeline = anime.timeline({ direction: "alternate", loop: false, autoplay: false });
+basicTimeline
+
+.add({
+   targets: '.colourintro',
+   opacity: 0,
+   easing: "easeInOutQuad",
+   duration: 0
+})
+
+.add({
+   targets: ['p.alice', 'p.colourbob'],
+   scale: {
+   value: [0, 1],
+   duration: 600,
+   delay: 600,
+   easing: 'easeOutQuad'
+   },
+   offset: 0
+ })
+
+.add({
+  targets:'p.colourtext1',
+  scale: {
+  value: [0, 1],
+  duration: 1000,
+  delay: 1600,
+  easing: 'easeOutQuad'
+  },
+  offset: 0
+})
+
+  .add({
+    targets:'.trying_new',
+    scale: {
+    value: [0, 1],
+    duration: 1000,
+    delay: 1600,
+    easing: 'easeOutQuad'
+    },
+    offset: 0
+})
+.add({
+  targets:'.second',
+  scale: {
+  value: [0, 1],
+  duration: 1000,
+  delay: 1600,
+  easing: 'easeOutQuad'
+},
+offset: 0
+})
+
+.add({
+  targets:'p.colourtext1',
+  scale: {
+  value: [1, 0],
+  duration: 500,
+  delay: 1600,
+  easing: 'easeInQuad'
+},
+offset: 0
+})
+
+.add({
+  targets:'p.colourtext2',
+  scale: {
+  value: [0, 1],
+  duration: 1000,
+  delay: 1600,
+  easing: 'easeOutQuad'
+  },
+  offset: 0
+})
+
+.add({
+  targets:'.alicepriv',
+  scale: {
+  value: [0, 1],
+  duration: 1000,
+  delay: 1600,
+  easing: 'easeOutQuad'
+},
+offset: 0
+})
+
+.add({
+  targets:'.bobpriv',
+  scale: {
+  value: [0, 1],
+  duration: 1000,
+  delay: 1600,
+  easing: 'easeOutQuad'
+},
+offset: 0
+})
+
+.add({
+  targets:'p.colourtext2',
+  scale: {
+  value: [1, 0],
+  duration: 500,
+  delay: 1600,
+  easing: 'easeInQuad'
+},
+offset: 0
+})
+
+.add({
+  targets:'p.colourtext3',
+  scale: {
+  value: [0, 1],
+  duration: 1000,
+  delay: 1600,
+  easing: 'easeOutQuad'
+},
+offset: 0
+})
+
+.add({
+   targets: ".trying_new",
+   duration: 2000,
+   translateY: '7vw'
+ })
+
+ .add({
+    targets: ".trying_new",
+    opacity: 0,
+  })
+
+ .add({
+     targets: ".alicepriv",
+     background: '#ffa500',
+     duration: 1000
+   })
+
+  .add({
+    targets: ".second",
+    duration: 2000,
+    translateY: '7vw'
+    })
+
+  .add({
+      targets: ".second",
+      opacity: 0
+     })
+
+  .add({
+      targets: ".bobpriv",
+      background: '#008000',
+      duration: 1000
+    })
+
+    .add({
+      targets:'p.colourtext3',
+      scale: {
+      value: [1, 0],
+      duration: 500,
+      delay: 1600,
+      easing: 'easeInQuad'
+    },
+    offset: 0
+    })
+
+    .add({
+      targets:'.three2',
+      scale: {
+      value: [0, 1],
+      duration: 1000,
+      delay: 1600,
+      easing: 'easeOutQuad'
+      },
+      offset: 0
+      })
+
+  .add({
+      targets:'p.coloureve',
+      scale: {
+      value: [0, 1],
+      duration: 600,
+      delay: 600,
+      easing: 'easeOutQuad'
+      },
+      offset: 0
+      })
+    .add({
+        targets:'.eve',
+        scale: {
+        value: [0, 1],
+        duration: 600,
+        delay: 600,
+        easing: 'easeOutQuad'
+        },
+        offset: 0
+      })
+
+  .add({
+  targets:'.eve',
+  rotate: 360,
+  duration: 1600,
+  })
+      .add({
+          targets: ".colourbox",
+          background: '#ff4d4d',
+          duration: 4000,
+          })
+    .add({
+      targets:'p.three2',
+      scale: {
+      value: [1, 0],
+      duration: 500,
+      delay: 1600,
+      easing: 'easeInQuad'
+    },
+    offset: 0
+    })
+
+    .add({
+      targets:'p.colourtext4',
+      scale: {
+      value: [0, 1],
+      duration: 1000,
+      delay: 1600,
+      easing: 'easeOutQuad'
+    },
+    offset: 0
+  })
+
+  .add({
+      targets: ".alicepriv",
+      background: '#ffa500',
+      translateY: '3vw',
+      translateX: '14vw',
+      duration: 4000,
+      rotate: [0, '-30deg']
+      })
+
+  .add({
+      targets: ".alicepriv",
+      background: '#4E146C',
+    })
+
+    .add({
+        targets: ".alicepriv",
+        translateY: '5vw',
+        translateX: '29vw',
+        duration: 4000,
+        })
+
+  .add({
+      targets: ".bobpriv",
+      translateY: '2vw',
+      translateX: '-15vw',
+      duration: 4000,
+      rotate: [0, '-30deg']
+    })
+
+
+      .add({
+          targets: ".bobpriv",
+          translateY: '5vw',
+          translateX: '-29vw',
+          duration: 4000,
+          rotate: [0, '-30deg']
+        })
+
+    .add({
+      targets:'p.colourtext4',
+      scale: {
+      value: [1, 0],
+      duration: 500,
+      delay: 1600,
+      easing: 'easeInQuad'
+    },
+    offset: 0
+    })
+
+    .add({
+      targets:'p.colourtext5',
+      scale: {
+      value: [0, 1],
+      duration: 1000,
+      delay: 1600,
+      easing: 'easeOutQuad'
+    },
+    offset: 0
+    })
+
+    .add({
+      targets:'.alicepk2',
+      scale: {
+      value: [0, 1],
+      duration: 1000,
+      delay: 1600,
+      easing: 'easeOutQuad'
+    },
+    offset: 0
+  })
+
+  .add({
+    targets:'.bobpk2',
+    scale: {
+    value: [0, 1],
+    duration: 1000,
+    delay: 1600,
+    easing: 'easeOutQuad'
+  },
+  offset: 0
+})
+
+.add({
+  targets: ".bobpriv",
+  duration: 3000,
+  translateY: '14vw'
+  })
+
+.add({
+    targets: ".bobpriv",
+    opacity: 0,
+    duration: 1000
+   })
+
+.add({
+   targets: ".alicepk2",
+   background: '#964B00'
+  })
+
+  .add({
+    targets: ".alicepriv",
+    duration: 3000,
+    translateY: '14vw'
+    })
+
+  .add({
+      targets: ".alicepriv",
+      opacity: 0,
+      duration: 1000
+     })
+
+  .add({
+     targets: ".bobpk2",
+     background: '#6600cc'
+    })
+
+    .add({
+      targets:'p.colourtext5',
+      scale: {
+      value: [1, 0],
+      duration: 500,
+      delay: 1600,
+      easing: 'easeInQuad'
+    },
+    offset: 0
+    })
+
+    .add({
+      targets:'p.colourtext6',
+      scale: {
+      value: [0, 1],
+      duration: 1000,
+      delay: 1600,
+      easing: 'easeOutQuad'
+    },
+    offset: 0
+    })
+
+
+
+
+var MathsTimeline = anime.timeline({ direction: "alternate", loop: false, autoplay: false});
+  MathsTimeline
+
+  .add({
+     targets: '.mathsintro',
+     opacity: 0,
+     easing: "easeInOutQuad",
+     duration: 0
+  })
+
+  .add({
+     targets: ['p.mathsalice', 'p.mathsbob'],
+     scale: {
+     value: [0, 1],
+     duration: 600,
+     delay: 600,
+     easing: 'easeOutQuad',
+     },
+     offset: 0,
+
+
+
+   })
+
+
+    .add({
+      targets:'p.f',
+      scale: {
+      value: [0, 1],
+      duration: 1000,
+      delay: 1600,
+      easing: 'easeOutQuad'
+      },
+      offset: 0,
+    })
+
+
+
+      .add({
+        targets:'p.pg',
+        scale: {
+        value: [0, 1],
+        duration: 1000,
+        delay: 1600,
+        easing: 'easeOutQuad'
+        },
+        offset: 0,
+
+
+    })
+
+
+    .add({
+      targets:'p.pg2',
+      scale: {
+      value: [0, 1],
+      duration: 1000,
+      delay: 1600,
+      easing: 'easeOutQuad'
+    },
+    offset: 0
+    })
+
+    .add({
+      targets:'p.f',
+      scale: {
+      value: [1, 0],
+      duration: 500,
+      delay: 1600,
+      easing: 'easeInQuad'
+    },
+    offset: 0
+    })
+
+
+    .add({
+      targets:'p.next',
+      scale: {
+      value: [0, 1],
+      duration: 1000,
+      delay: 1600,
+      easing: 'easeOutQuad'
+      },
+      offset: 0
+    })
+
+    .add({
+      targets:'.aliceprivKey',
+      scale: {
+      value: [0, 1],
+      duration: 1000,
+      delay: 1600,
+      easing: 'easeOutQuad'
+    },
+    offset: 0
+    })
+
+    .add({
+      targets:'.bobprivKey',
+      scale: {
+      value: [0, 1],
+      duration: 1000,
+      delay: 1600,
+      easing: 'easeOutQuad'
+    },
+    offset: 0
+    })
+
+    .add({
+      targets:'p.next',
+      scale: {
+      value: [1, 0],
+      duration: 500,
+      delay: 1600,
+      easing: 'easeInQuad'
+        },
+        offset: 0
+        })
+
+    .add({
+      targets:'p.three',
+      scale: {
+      value: [0, 1],
+      duration: 500,
+      delay: 1600,
+      easing: 'easeOutQuad'
+    },
+    offset: 0
+    })
+
+    .add({
+      targets: 'path.pathbob',
+      strokeDashoffset: {
+      value: 0,
+      duration: 2600,
+      easing: 'easeOutQuart'
+       },
+    })
+
+
+    .add({
+      targets:'.alicepubKey',
+      scale: {
+      value: [0, 1],
+      duration: 500,
+      delay: 1600,
+      easing: 'easeOutQuad'
+    },
+    offset: 0
+    })
+
+
+    .add({
+      targets:'.bobpubKey',
+      scale: {
+      value: [0, 1],
+      duration: 1000,
+      delay: 1600,
+      easing: 'easeOutQuad'
+    },
+    offset: 0
+    })
+
+
+    .add({
+      targets:'.alicepubKeysol',
+      scale: {
+      value: [0, 1],
+      duration: 1000,
+      delay: 1600,
+      easing: 'easeInQuad'
+      },
+        offset: 0
+        })
+
+        .add({
+          targets:'.bobpubKeysol',
+          scale: {
+          value: [0, 1],
+          duration: 1000,
+          delay: 1600,
+          easing: 'easeOutQuad'
+        },
+        offset: 0
+        })
+
+        .add({
+          targets:['.orangekey' , '.greenkey'],
+          scale: {
+          value: [0, 1],
+          duration: 10,
+          delay: 1600,
+          easing: 'easeOutQuad'
+        },
+        offset: 0
+        })
+
+        .add({
+          targets:['.orangekey' , '.greenkey'],
+          rotate: [0, -5],
+          duration: 300,
+          easing: 'easeOutSine',
+          direction: 'up',
+          })
+
+
+          .add({
+            targets:['.orangekey' , '.greenkey'],
+            rotate: [-5, 0],
+            duration: 300,
+            easing: 'easeOutSine',
+            direction: 'up',
+          })
+
+  .add({
+    targets:'p.matheve',
+    scale: {
+    value: [0, 1],
+    duration: 600,
+    delay: 600,
+    easing: 'easeOutQuad'
+      },
+      offset: 0
+      })
+
+  .add({
+  targets:'.meve',
+  scale: {
+  value: [0, 1],
+  duration: 600,
+  delay: 600,
+  easing: 'easeOutQuad'
+      },
+  offset: 0
+    })
+
+    .add({
+    targets:'.meve',
+    rotate: 360,
+    duration: 1600,
+  })
+
+  .add({
+      targets: ".mathbox",
+      background: '#ff4d4d',
+      duration: 2000,
+      })
+
+        .add({
+          targets:'p.three',
+          scale: {
+          value: [1, 0],
+          duration: 500,
+          delay: 1600,
+          easing: 'easeInQuad'
+        },
+        offset: 0
+        })
+
+        .add({
+          targets:'p.fourth',
+          scale: {
+          value: [0, 1],
+          duration: 1000,
+          delay: 1600,
+          easing: 'easeOutQuad'
+        },
+        offset: 0
+        })
+
+      .add({
+          targets: ".orangekey",
+          translateY: '2vw',
+          translateX: '14vw',
+          duration: 2000,
+        })
+
+
+          .add({
+            targets:'.purplekey',
+            scale: {
+            value: [0, 1],
+            duration: 1000,
+            delay: 1600,
+            easing: 'easeOutQuad'
+          },
+          offset: 0
+          })
+
+      .add({
+      targets: ".orangekey",
+      opacity: 0,
+      duration: 1000
+        })
+
+        .add({
+          targets:'p.EveAlice',
+          scale: {
+          value: [0, 1],
+          duration: 1000,
+          delay: 1600,
+          easing: 'easeOutQuad'
+        },
+        offset: 0
+        })
+
+
+          .add({
+              targets: [".purplekey", "p.EveAlice"],
+              translateY: '1vw',
+              translateX: '15vw',
+              duration: 4000,
+            })
+
+      .add({
+          targets: ".greenkey",
+          translateY: '2vw',
+          translateX: '-15vw',
+          duration: 4000,
+        })
+
+
+          .add({
+            targets: ".greenkey",
+            translateY: '3vw',
+            translateX: '-28vw',
+            duration: 4000,
+          })
+
+          .add({
+            targets:'p.EveBob',
+            scale: {
+            value: [0, 1],
+            duration: 1000,
+            delay: 1600,
+            easing: 'easeOutQuad'
+          },
+          offset: 0
+          })
+
+        .add({
+          targets:'p.fourth',
+          scale: {
+          value: [1, 0],
+          duration: 500,
+          delay: 1600,
+          easing: 'easeInQuad'
+        },
+        offset: 0
+        })
+
+        .add({
+          targets:'p.five',
+          scale: {
+          value: [0, 1],
+          duration: 1000,
+          delay: 1600,
+          easing: 'easeOutQuad'
+        },
+        offset: 0
+        })
+
+        .add({
+          targets: '.pathalice',
+          strokeDashoffset: {
+          value: 0,
+          duration: 2600,
+          easing: 'easeOutQuart'
+           },
+        })
+
+        .add({
+          targets:'.aliceshared',
+          scale: {
+          value: [0, 1],
+          duration: 1000,
+          delay: 1600,
+          easing: 'easeOutQuad'
+        },
+        offset: 0
+      })
+
+      .add({
+        targets:'.bobshared',
+        scale: {
+        value: [0, 1],
+        duration: 1000,
+        delay: 1600,
+        easing: 'easeOutQuad'
+      },
+      offset: 0
+    })
+
+        .add({
+          targets:'.alicefinal',
+          scale: {
+          value: [0, 1],
+          duration: 1000,
+          delay: 1600,
+          easing: 'easeOutQuad'
+        },
+        offset: 0
+      })
+
+      .add({
+        targets:'.bobfinal',
+        scale: {
+        value: [0, 1],
+        duration: 1000,
+        delay: 1600,
+        easing: 'easeOutQuad'
+      },
+      offset: 0
+    })
+
+    .add({
+      targets:['.brownkey', '.brownkey2'],
+      scale: {
+      value: [0, 1],
+      duration: 10,
+      delay: 1600,
+      easing: 'easeOutQuad'
+    },
+    offset: 0
+    })
+
+        .add({
+          targets:['.brownkey', '.brownkey2'],
+          rotate: [0, -5],
+          duration: 300,
+          easing: 'easeOutSine',
+          direction: 'up',
+          })
+
+
+          .add({
+            targets:['.brownkey', '.brownkey2'],
+            rotate: [-5, 0],
+            duration: 300,
+            easing: 'easeOutSine',
+            direction: 'up',
+          })
+
+        .add({
+          targets:'p.five',
+          scale: {
+          value: [1, 0],
+          duration: 500,
+          delay: 1600,
+          easing: 'easeInQuad'
+        },
+        offset: 0
+        })
+
+
+        .add({
+          targets:'p.last',
+          scale: {
+          value: [0, 1],
+          duration: 1000,
+          delay: 1600,
+          easing: 'easeOutQuad'
+        },
+        offset: 0
+        })
+
+
+document.querySelector(".timeline1").onclick = MathsTimeline.restart;
+document.querySelector(".timeline2").onclick = basicTimeline.restart;
+document.querySelector(".play-colour").onclick = basicTimeline.play; //https://codepen.io/Shokeen/pen/KqzmvV
+document.querySelector(".play-pausecolour").onclick = basicTimeline.pause;
+document.querySelector(".play-maths").onclick = MathsTimeline.play; //https://codepen.io/Shokeen/pen/KqzmvV
+document.querySelector(".play-pausemaths").onclick = MathsTimeline.pause;
+
+
+
+
+</script>
+</body>
+</html>
